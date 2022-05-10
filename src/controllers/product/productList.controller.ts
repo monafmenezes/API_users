@@ -1,0 +1,11 @@
+import { Request, Response } from "express";
+import { IProduct } from "../../interfaces/product";
+import productListService from "../../services/product/productList.service";
+
+const productListContoller = async (req: Request, res: Response) => {
+  const productList: IProduct[] = await productListService();
+
+  return res.json(productList);
+};
+
+export default productListContoller;
