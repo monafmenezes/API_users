@@ -14,7 +14,6 @@ const userListOneController = async (req: Request, res: Response) => {
       handleError(error, res);
     }
     }
-  }
 };
 
 export default userListOneController;
